@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+body {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  color: #0f0f0f;
+  font-size: 14px;
+}
+
 .img-Thumbnail {
   width: 380px;
 }
@@ -20,18 +26,25 @@
 }
 
 .caixa-titulo {
-  color: black;
   font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.caixa-texto a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
 }
 
 .caixa-texto-menor {
   color: #606060;
-  font-size: 14px;
 }
 
 .img-Thumbnail {
   border-radius: 12.5px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .img-Canal {
@@ -53,4 +66,185 @@
 
 .caixa-videos {
   width: 380px;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.categorias {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 40px;
+}
+.categoria {
+  font-size: inherit;
+  font-weight: inherit;
+  border-radius: 8px;
+  background-color: #0000000d;
+  padding: 7px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.categoria.selecionado {
+  background-color: #0f0f0f;
+  color: white;
+}
+.l-principal {
+  display: flex;
+  padding: 10px 0;
+  gap: 40px;
+}
+.menu-lateral {
+  min-width: 240px;
+  width: 224px;
+  margin-right: 16px;
+}
+
+.menu-bloco {
+  border-bottom: 1px solid rgb(167, 162, 162);
+  margin: 15px;
+}
+.menu-bloco:last-child {
+  border-bottom: none;
+}
+
+.bloco-item {
+  color: inherit;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.bloco-item.selecionado {
+  background-color: #0000000d;
+  font-weight: 600;
+}
+
+.bloco-titulo {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 3px;
+}
+
+.login-bloco {
+  border-bottom: 1px solid rgb(167, 162, 162);
+  margin: 15px;
+  padding-bottom: 15px;
+}
+
+.login-texto {
+  font-size: 14px;
+  color: #0f0f0f;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.botao-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #065fd4;
+  border-radius: 25px;
+  color: #065fd4;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.botao-login:hover {
+  background-color: #def1ff;
+}
+
+.icone-login {
+  width: 24px;
+  height: 24px;
+}
+
+.cabecalho {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.caixa-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+}
+
+.header {
+  padding: 8px 16px;
+  justify-content: space-between;
+}
+
+.header,
+.icones,
+.inputs,
+.sessao,
+.login,
+.ml-opcao {
+  display: flex;
+  align-items: center;
+}
+
+.header,
+.inputs,
+.sessao {
+  gap: 24px;
+}
+
+.icones {
+  gap: 16px;
+}
+
+.icone {
+  height: 24px;
+  cursor: pointer;
+}
+
+.icone-menu {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.icone-menu:hover {
+  background-color: #e5e5e5;
+}
+
+.icone-microfone {
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.icone-microfone:hover {
+  background-color: #d9d9d9;
+}
+
+.input-pesquisa {
+  height: 35px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  padding: 0 20px;
+  width: 400px;
+  font-size: 16px;
 }
